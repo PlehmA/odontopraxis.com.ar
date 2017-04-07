@@ -1,0 +1,418 @@
+<?
+	include ('lib.php');
+	include ('conect.php');
+//	session_start();
+?>
+<html>
+<head>
+<title>Accusys</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" title="Disabled for Preview-in-Browser: contenido.css" type="text/css">
+<style type="text/css">
+
+.contenido {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: 16px}
+
+
+</style>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" topmargin="0" leftmargin="0">
+<table width="976" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td> 
+      <MM:BeginLock translatorClass="MM_SSI" type="ssi" orig="%3C?php include%22header.php%22?%3E" fileRef="header.php" depFiles="file:///E|/calandrelli/Accusys/MIGRAR/header.php">
+      <table width="900" border="0" cellspacing="0" cellpadding="0"><script language="JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+        <tr> 
+          <td width="400"><a href="index.php"><img src="logo_accusys.jpg" width="203" height="77" border="0"></a></td>
+          <td valign="bottom"> 
+            <table width="750" border="0" cellspacing="0" cellpadding="0" align="right">
+              <tr> 
+                <td height="40" valign="top"> 
+                  <div align="right"> <font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="1"><b>
+                    <?
+    $directorio = dirname($_SERVER['PHP_SELF']); 
+    $erasebar = "/"; 
+    $reemplazar = ''; 
+//    $sindepurar = ereg_replace($directorio, $reemplazar, $_SERVER['REQUEST_URI']); 
+    @$sindepurar = ereg_replace($directorio, $reemplazar, $_SERVER['PHP_SELF']); 
+    $actualfile = ereg_replace($erasebar, $reemplazar, $sindepurar); 
+?>
+                    <select name="select2" class=gsearch onChange="MM_jumpMenu('parent',this,0)">
+                      <option selected>Elija idioma</option>
+                      <option value="ing/<?php echo $actualfile?>">Ingl&eacute;s</option>
+                    </select>
+                    </b></font></div>
+                </td>
+              </tr>
+              <tr> 
+                <td> 
+                  <div align="left"> 
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td width="230"></td>
+                        <td>
+                          <div align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b><a href="quienessomos.php"><font color="9298AB">Quienes 
+                            somos</font></a> |<a href="contacto.php"> <font color="9298AB">Cont&aacute;ctenos</font></a>|<a href="rrhh.php"> 
+                            <font color="9298AB">Recursos Humanos</font></a> </b></font> 
+                            <font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b> 
+                            </b></font> </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+              <tr> 
+                <td height="20"> </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <form name="form2" id="form2" action="#" method="POST">
+        <input type="hidden" name="startPage" value="0" />
+      </form>
+<MM:EndLock>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <div align="center">
+        <MM:BeginLock translatorClass="MM_SSI" type="ssi" orig="%3C?php include%22flash.php%22?%3E" fileRef="flash.php" depFiles="file:///E|/calandrelli/Accusys/MIGRAR/flash.php"><table width="976" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td> 
+            <div align="center"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="976" height="284">
+                <param name=movie value="banner.swf">
+                <param name=quality value=high>
+                <embed src="banner.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="976" height="284">
+                </embed> 
+              </object></div>
+          </td>
+        </tr>
+        <tr> 
+          <td height="5"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<MM:EndLock>
+      </div>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <MM:BeginLock translatorClass="MM_SSI" type="ssi" orig="%3C?php include%22menu_ac.php%22?%3E" fileRef="menu_ac.php" depFiles="file:///E|/calandrelli/Accusys/MIGRAR/menu_ac.php"><script language="JavaScript" type="text/javascript" src="menu_ac_scr.js">
+</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" background="f_menu_02.jpg" height="27">
+  <tr> 
+    <td height="27"><img src="f_menu_01.jpg" width="6" height="27"></td>
+    <td height="27"> 
+      <table  id="m1mainSXMenu2" cellspacing="1" cellpadding="5" class="x1" border="0" >
+        <tr align="center"> 
+          <td onMouseOver="chgBg(m1,'m1tlm0',3);exM(m1,'none','',event)"
+onMouseOut="chgBg(m1,'m1tlm0',0,1)"  id="m1tlm0"  class="m1mit" 
+> <a id="m1tlm0a" class="m1CL0" href="index.php" > 
+            <div class='topFold'>Home</div>
+            </a></td>
+          <td onMouseOver="chgBg(m1,'m1tlm1',3);exM(m1,'m1mn1','m1tlm1',event)"
+onMouseOut="chgBg(m1,'m1tlm1',0);coM(m1,'m1mn1')"  id="m1tlm1"  class="m1mit" 
+> <a id="m1tlm1a" class="m1CL0" href="soluciones.php"  onMouseOver="exMNS(m1,'m1mn1',event)"
+onMouseOut="coMNS(m1,'m1mn1')" > 
+            <div id='m1mn1top' class='topFold'>Soluciones<img width="8" height="8" src="menu_ac_m1iad.gif" align="texttop" border="0" /></div>
+            </a></td>
+          <td onMouseOver="chgBg(m1,'m1tlm2',3);exM(m1,'m1mn2','m1tlm2',event)"
+onMouseOut="chgBg(m1,'m1tlm2',0);coM(m1,'m1mn2')"  id="m1tlm2"  class="m1mit" 
+> <a id="m1tlm2a" class="m1CL0" href="industrias.php"  onMouseOver="exMNS(m1,'m1mn2',event)"
+onMouseOut="coMNS(m1,'m1mn2')" > 
+            <div id='m1mn2top' class='topFold'>Industrias<img width="8" height="8" src="menu_ac_m1iad.gif" align="texttop" border="0" /></div>
+            </a></td>
+          <td onMouseOver="chgBg(m1,'m1tlm3',3);exM(m1,'none','',event)"
+onMouseOut="chgBg(m1,'m1tlm3',0,1)"  id="m1tlm3"  class="m1mit" 
+> <a id="m1tlm3a" class="m1CL0" href="clientes.php" > 
+            <div class='topFold'>Clientes</div>
+            </a></td>
+          <td onMouseOver="chgBg(m1,'m1tlm4',3);exM(m1,'none','',event)"
+onMouseOut="chgBg(m1,'m1tlm4',0,1)"  id="m1tlm4"  class="m1mit" 
+> <a id="m1tlm4a" class="m1CL0" href="alianzas.php" > 
+            <div class='topFold'>Alianzas</div>
+            </a></td>
+        </tr>
+      </table>
+    </td>
+    <td height="27"> 
+      <div align="right"><img src="f_menu_03.jpg" width="6" height="27"></div>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td height="10"></td>
+  </tr>
+</table>
+<MM:EndLock>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="130" valign="top"> 
+            <MM:BeginLock translatorClass="MM_SSI" type="ssi" orig="%3C?php include%22lat_izq.php%22?%3E" fileRef="lat_izq.php" depFiles="file:///E|/calandrelli/Accusys/MIGRAR/lat_izq.php"><table width="130" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="166"> 
+                  <div align="center"> 
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td>&nbsp;&nbsp;<img src="tit_brochure.jpg" width="75" height="17"></td>
+                      </tr>
+                      <tr> 
+                        <td> 
+                          <div align="center"><a href="Accusys.pdf" target="_blank"><img src="icon_brochure.jpg" width="119" height="168" border="0"></a></div>
+                        </td>
+                      </tr>
+                      <tr> 
+                        <td> 
+                          <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b><a href="Accusys.pdf" target="_blank"><font color="9298AB">Descargue 
+                            [+]</font></a></b></font></div>
+                        </td>
+                      </tr>
+                      <tr> 
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr> 
+                        <td> 
+                          <div align="center"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="125" height="200">
+                              <param name=movie value="banner_izq2.swf">
+                              <param name=quality value=high>
+                              <embed src="banner_izq2.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="125" height="200">
+                              </embed> 
+                          </object></div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<MM:EndLock>
+          </td>
+          <td width="1" valign="top" bgcolor="9298AB"><img src="pixel.gif"></td>
+          <td>
+            <table width="593" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr>
+                <td background="main_top_home.jpg"> 
+                  <table width="593" border="0" cellspacing="0" cellpadding="0" height="39">
+                    <tr>
+                      <td>
+                        <table width="80%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td height="2" colspan="3"></td>
+                          </tr>
+                          <tr> 
+                            <td width="100"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b><font color="9699AA" size="1">NOTICIAS</font></b></font></td>
+                            <td width="15">&nbsp;</td>
+                            <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b><a href="prensa.php"><font color="#FFFFFF" size="1">PRENSA 
+                              Y EVENTOS</font></a></b></font></td>
+                          </tr>
+						  <tr> 
+                            <td height="5" colspan="3"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="12" valign="top" background="main_izq.jpg"><img src="main_izq.jpg" width="12" height="22"></td>
+                      <td> <br>
+                        <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> </tr>
+                          <tr> 
+                            <td height="10"></td>
+                          </tr>
+                          <tr> 
+                            <td height="9" valign="top"> 
+                              <?
+	$col2_sql = "SELECT * FROM " . DB_PREFIX . "noticias ";
+	$col2_sql.= " WHERE publicado = 'S' ";
+	$col2_sql.= " ORDER BY fecha DESC, id DESC ";
+	$col2_sql.= " LIMIT 3 ";
+	
+	$col2_res = mysql_query($col2_sql);
+	$col2_total = mysql_num_rows($col2_res);
+
+	$col2_idx = 0;
+	while ($col2_idx < $col2_total)	{
+
+		$col2_id = mysql_result($col2_res, $col2_idx,'id');
+		$col2_fecha = mysql_result($col2_res, $col2_idx,'fecha');
+		$col2_titulo = mysql_result($col2_res, $col2_idx,'titulo');
+		$col2_bajada = mysql_result($col2_res, $col2_idx,'bajada');
+		$col2_imagen = mysql_result($col2_res, $col2_idx,'imagen');
+		$col2_fecha_str = substr($col2_fecha,6,2).'-'.substr($col2_fecha,4,2).'-'.substr($col2_fecha,0,4);
+		
+		if ($col2_idx > 0)	{
+?>
+                              <?
+		}
+?>
+                              <font color="#666666" class="bodytext"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><font color="#003366" face="Verdana, Arial, Helvetica, sans-serif" size="2"><font color="#999999" size="1"> 
+                              <b> </b></font></font></font></font><b></b><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                              <b><a href="nota.php?id=<?=$col2_id?>"><font color="#666666" class="bodytext"> 
+                              </font></a></b></font> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td colspan="5">&nbsp;</td>
+                                </tr>
+                                <tr> 
+                                  <td valign="top"> 
+                                    <?if ($col2_imagen != ''){?>
+                                    <a href="nota.php?id=<?=$col2_id?>"><img src="<?=NOTICIAS_DIR . $col2_imagen?>" width="70" height="53" border="0"></a> 
+                                  </td>
+                                  <td width="10"></td>
+                                  <td bgcolor="9699AA" width="1"></td>
+                                  <td width="10"></td>
+                                  <?}?>
+                                  <td valign="top" width="80%"><img src="bullet.jpg" width="7" height="7"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b><font color="#000000"><a href="nota.php?id=<?=$col2_id?>"> 
+                                    <span class="contenido"><font color="#000000"> 
+                                    <?=$col2_titulo?>
+                                    </font> </span></a></font></b></font><br>
+                                    <font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="1"><span class="contenido"> 
+                                    <?=$col2_bajada?>
+                                    </span> </font><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><br>
+                                    <b><font color="9699AA"><a href="nota.php?id=<?=$col2_id?>"><font color="9699AA"><span class="contenido">Ver 
+                                    mas [+]</span></font></a></font></b></font></td>
+                                </tr>
+                                <tr> 
+                                  <td colspan="5" height="10"></td>
+                                </tr>
+                                <tr bgcolor="#CCCCCC"> 
+                                  <td colspan="5" height="1"></td>
+                                </tr>
+                                <tr> 
+                                  <td colspan="5" height="10"></td>
+                                </tr>
+                              </table>
+                              <br>
+                              <?
+		$col2_idx++;
+	}
+	mysql_free_result($col2_res);
+?>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td height="25" width="80%">
+                              <div align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b><font size="1"><a href="novedades.php"><font color="#000000">Ver 
+                                todas las noticias &gt;&gt;</font></a></font></b></font></div>
+                            </td>
+                          </tr>
+                        </table>
+                        <br>
+                      </td>
+                      <td width="10" valign="top" background="main_der.jpg"> 
+                        <div align="right"><img src="main_der.jpg" width="10" height="19"></div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="main_bottom.jpg" width="593" height="29"></td>
+              </tr>
+            </table>
+          </td>
+          <td width="1" bgcolor="9298AB"><img src="pixel.gif"></td>
+          <td valign="top" width="215"> 
+            <div align="right">
+              <MM:BeginLock translatorClass="MM_SSI" type="ssi" orig="%3C?php include%22casosnegocios.php%22?%3E" fileRef="casosnegocios.php" depFiles="file:///E|/calandrelli/Accusys/MIGRAR/casosnegocios.php"><table width="130" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="166"></td>
+      </tr>
+      <tr>
+        <td><img src="caso_ng_01.jpg" width="209" height="42"></td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="135" align="right" background="caso_ng_back_vid.jpg"><a href="video/video_gal.php"><img src="video/images/vid_icon1.jpg" width="120" height="89" border="0"></a></td>
+            <td align="right"><a href="video/video_gal.php"><img src="caso_ng_bot_vid.jpg" width="77" height="105" border="0"></a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><img src="caso_ng_02.jpg" width="209" height="78"></td>
+      </tr>
+      <tr>
+        <td><a href="clientes.php"><img src="caso_ng_03.jpg" width="209" height="208" border="0"></a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<MM:EndLock>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <MM:BeginLock translatorClass="MM_SSI" type="ssi" orig="%3C?php include%22pie.php%22?%3E" fileRef="pie.php" depFiles="file:///E|/calandrelli/Accusys/MIGRAR/pie.php"><table width="976" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td bgcolor="E7E8ED" height="40"> 
+            <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">2005 
+              | 2010 &reg; Accusys Technology S.A. - Todos los derechos reservados.<br>
+              Av. C&oacute;rdoba 673 Piso 12&ordm;, Ciudad Aut&oacute;noma de 
+              Buenos Aires, Argentina. Tel&eacute;fono: 54 11 5254-0748</font></div>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<MM:EndLock>
+    </td>
+  </tr>
+
+</table>
+</body>
+</html>

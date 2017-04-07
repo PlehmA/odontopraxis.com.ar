@@ -1,0 +1,34 @@
+@charset "utf-8";
+.logo-ingreso {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	margin: 1%;
+}
+.texto-ingreso {
+	color: #036;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+	font-size: 20px;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 6px;
+	padding-left: 15px;
+}
+.banner-ingreso {
+	text-align: center;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.tex-form-ingreso{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 11px;
+	text-align: right;
+	}
+.centrado{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 10px;
+	text-align: center;
+	}

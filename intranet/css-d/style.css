@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+
+.logo-ingreso {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	margin: 1%;
+}
+.texto-ingreso {
+	color: #036;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+	font-size: 20px;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 6px;
+	padding-left: 15px;
+}
+.banner-ingreso {
+	text-align: center;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.tex-form-ingreso{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 11px;
+	text-align: right;
+	}
+.centrado{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 10px;
+	text-align: center;
+	}
+
+
+
+
+.columna-iz{
+	width:20%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 0.75em;
+	color: #666;
+	font-weight: normal;
+	text-align: left;
+	line-height: 25px;
+	display: block;
+	float: left;
+	clear: both;
+	margin-top: 1%;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	margin-left: 5%;
+}
+
+
+.centro{
+	width: 50%;
+	display: block;
+	float: left;
+	clear: none;
+	margin: 1%;
+}
+
+.columna-der{
+	width: 20%;
+	display: block;
+	clear: none;
+	float: left;
+	margin: 1%;
+}
+
+
+	/***** Media Quries *****/
+@media only screen and (max-width: 1280px) {
+
+	
+@media only screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 768px) {
+
+
+@media only screen and (max-width: 320px)  {

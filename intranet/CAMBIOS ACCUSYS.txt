@@ -1,0 +1,5 @@
+- que los videos tengan comentario de los usuarios. que lo pueda filtrar antes de subir el comentario.
+
+- sacar respaldo internacional. poner primero MULTIMEDIA y abajo presencia regional
+
+- unificar banner chico de la izq

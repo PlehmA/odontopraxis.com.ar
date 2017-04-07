@@ -1,0 +1,400 @@
+@charset "ISO-8859-1";
+
+/* ************************************************ */
+/*                    FIIXES JFP                    */
+/* ************************************************ */
+.NavLink {font-family:Arial, Helvetica, sans-serif; color: #333399; text-decoration: none; font-size: 11px; font-weight: bold;}
+.NavLink:hover {color: #3399cc; text-decoration: none;}
+#jfplogincontra{	color:#FFFFFF;font-family:Arial;font-size:11px;}
+#password{	width: 125px;}
+#TakeMeStraightToCombo {	position:absolute;	left:50%;	top:90px;	margin-left:291px;}
+#TakeMeStraightToCombo select {	width:171px;}
+#TakeMeStraightToCombo.tmstHome{	margin-left:291px !important;}
+.subMenuTdRebranding{	height:32px;	padding-top:6px;}
+.solapa{	height:17px;	border-right:1px solid #DFDFDF;	padding-left: 10px;	padding-right: 10px;	padding-top: 5px;	padding-bottom: 6px;}
+/* ************************************************ */
+/*                 FIN FIIXES JFP                   */
+/* ************************************************ */
+
+
+/* ************************************************ */
+/*                        BODY                      */
+/* ************************************************ */
+
+#form2{margin-top:-13px;}
+#centralBanner {	width:717px;	height:225px;	z-index:0;}
+.conhomepageBody {float:left;	position:relative;	width:953px;	color:#797979;	font-family:Arial; font-size:11px;}
+.conhomepageBody .conLeftColumn {float:left;	padding:0;	width:235px;}
+.conhomepageBody .conMiddleColumn{float:left;	width:712px;margin-left:5px;}
+.conhomepageBody .conLeftColumn .conInfoLeft {-moz-background-clip:border;	-moz-background-inline-policy:continuous;	-moz-background-origin:padding;	background:url('/common/imgs/homepage/bg_box_mid.jpg') repeat-y 0 0;	padding:0;	float:left;position:relative;	width:100%;	z-index:3}
+.conhomepageBody .conLeftColumn .conInfoLeft .box_up {-moz-background-clip:border;	-moz-background-inline-policy:continuous;	-moz-background-origin:padding;	background:url('/common/imgs/homepage/bg_box_up.jpg') no-repeat 0 0;	float:left;	height:12px;	padding:0;	width:235px}
+.conhomepageBody .conLeftColumn .conInfoLeft .box_down {-moz-background-clip:border;	-moz-background-inline-policy:continuous;	-moz-background-origin:padding;	background:url('/common/imgs/homepage/bg_box_down.jpg') 0 0;	float:left;	height:15px;	padding:0;	width:235px}
+.conhomepageBody .conLeftColumn .conMicroAds {-moz-background-clip:border;	-moz-background-inline-policy:continuous;	-moz-background-origin:padding;	background:url('/common/imgs/homepage/bg_boxgray231x90.jpg') no-repeat 0 0;	float:left;	height:106px;	width:233px; padding-left:10px; padding-right:0; padding-top:0; padding-bottom:0}
+.conhomepageBody .conLeftColumn .conMicroAds .Title {height:22px;	padding-left:12px;	padding-top:8px;	text-decoration:none;}
+.conhomepageBody .conLeftColumn .conMicroAds .subtitulo {padding-left:12px;	padding-right:10px;}
+.conhomepageBody .conLeftColumn .conMicroAds .more {text-decoration:none;	font-weight:bold;	padding-left:12px;	padding-top:8px;}
+.conhomepageBody .conLeftColumn .conMicroAds .more a {text-decoration:none;	font-weight:bold;	display:inline;	font-size:11px;	font-family:Arial, Helvetica, sans-serif;}
+.conhomepageBody .conLeftColumn .conMicroAds .more a:hover {text-decoration:underline;}
+.conhomepageBody .conLeftColumn .conInfoLeft .conInfoLeftCont {float:left;	margin-left:15px;	padding:0;	width:220px;}
+* html  .conhomepageBody .conLeftColumn .conInfoLeft .conInfoLeftCont {float:left;	margin-left:6px;	padding:0;	width:220px;}
+.conhomepageBody .conLeftColumn .conInfoLeft .conInfoLeftCont .conText {height:95px;}
+.conhomepageBody .conLeftColumn .conInfoLeft .conInfoLeftCont .Title {float:left;	margin:8px 10px 0 0;	text-decoration:none;	width:202px;}
+.conhomepageBody .conLeftColumn .conInfoLeft .conInfoLeftCont .TitleBis {float:left;	#float:none;	margin:0 0 0 25px;	position:relative;	text-align:left;	text-decoration:none;	top:5px;}
+.conhomepageBody .conLeftColumn .conInfoLeft .conInfoLeftCont .subtitulo {float:left;	margin:8px 10px 0 0;	width:202px;}
+.conhomepageBody .conLeftColumn .conInfoLeft .conInfoLeftCont .SubTitle a {color:#797979;	text-decoration:none;}
+.conhomepageBody .conLeftColumn .conInfoLeft .conInfoLeftCont .SubTitle a:hover {text-decoration:underline;}
+.conhomepageBody .conLeftColumn .conInfoLeft .conInfoLeftCont .more {float:left;	font-weight:bold;	margin:8px 10px 0 0;	width:202px;}
+.conhomepageBody .conLeftColumn .conInfoLeft .conInfoLeftCont .more a{font-weight:bold;	text-decoration:none;	font-size:11px;	font-family:Arial, Helvetica, sans-serif;}
+.conhomepageBody .conLeftColumn .conInfoLeft .conInfoLeftCont .more a:hover{text-decoration:underline;}
+.conhomepageBody .conLeftColumn .conInfoLeft .conInfoLeftCont .DotLine {-moz-background-clip:border;	-moz-background-inline-policy:continuous;	-moz-background-origin:padding;	background:url('https://www.argentina.citibank.com/common/imgs/homepage/DotLine.gif') repeat-x 0 0;	clear:both;	font-size:1px;	height:1px;	line-height:1px;	margin:5px 0;	width:205px}
+.conMiddleColumn .conBanners{float:left;	width:100%;}
+.conMiddleColumn .conBanners .conMicroAds {position:relative;	float:left;	height:106px; cursor:pointer;}
+.conMiddleColumn .conBanners .conSoluciones {position:relative;	float:left;}
+.conMiddleColumn .conBanners .Line {-moz-background-clip:border;	-moz-background-inline-policy:continuous;	-moz-background-origin:padding;	background-color:#E7E7E7;	float:left;	font-size:1px;	height:1px;	line-height:1px;	margin:5px 0;	width:713px;}
+.conMiddleColumn .conBanners .conBene {float:left;	height:95px;	padding:5px 0 0 15px;	position:relative;	width:215px;}
+.conMiddleColumn .conBanners .conBene .Title {float:left;	font-size:12px;	font-weight:bold;	padding:10px 0 0;	position:relative;	text-align:left;	width:160px;	height:26px;}
+.conMiddleColumn .conBanners .conBene .Title a {font-size:12px;	font-family:Arial, Helvetica, sans-serif;	text-decoration:none;	width:126px;	height:26px;	display:block;}
+#TitleBenef a{width:168px;}
+.conMiddleColumn .conBanners .conBene .Title a:hover {text-decoration:underline;}
+.conMiddleColumn .conBanners .conBene .subtitulo{color:#797979;	font-family:Arial, Helvetica, sans-serif;	font-size:12px;	float:left;	margin-top:5px;	padding:0;	position:relative;	text-align:left;	width:210px;}
+.conMiddleColumn .conBanners .conBene .SubTitle {float:left;	margin-top:5px;	padding:0;	position:relative;	text-align:left;	width:210px;}
+.conMiddleColumn .conBanners .conBene .SubTitle a {color:#797979;	text-decoration:none;}
+.conMiddleColumn .conBanners .conBene .SubTitle a:hover {color:#797979;	text-decoration:underline;}
+.more {float:left;	font-weight:bold;	margin-top:5px;	padding:0;	position:relative;	text-align:left;	width:210px;	font-size:11px;	font-family:Arial, Helvetica, sans-serif;}
+.more a{text-decoration:none;	font-family:Arial, Helvetica, sans-serif;	font-size:11px;}
+.more a:hover{text-decoration:underline;}
+.conMiddleColumn .conBanners .conBene .more {float:left;	font-family:Arial,Helvetica,sans-serif;	font-size:11px;	font-weight:bold;	margin-top:20px;	padding:0;	position:relative;	text-align:left;	width:210px;}
+.conMiddleColumn .conBanners .conBene .more a{text-decoration:none;	font-family:Arial, Helvetica, sans-serif;	font-size:11px;}
+.conMiddleColumn .conBanners .conBene .more a:hover{text-decoration:underline;}
+.conMiddleColumn .conBanners .verticalInfo {background-image:url('https://www.argentina.citibank.com/common/imgs/homepage/bg_boxgray704x124.jpg');	height:124px;	width:704px;	float:left;	margin-top:8px;	#margin-top:7px}
+.conMiddleColumn .conBanners .verticalInfo .block{height:124px;	width:350px;	float:left;}
+.conMiddleColumn .conBanners .verticalInfo .text{width:225px;	float:left;	margin-left:15px;}
+.conMiddleColumn .conBanners .verticalInfo .info{float:left;	width:225px;}
+.conMiddleColumn .conBanners .verticalInfo .info2{float:left;	width:245px;}
+.conMiddleColumn .conBanners .verticalInfo .more {text-align:right;	width:225px;}
+.conMiddleColumn .conBanners .conDotVer {background:url('https://www.argentina.citibank.com/common/imgs/homepage/DotLineV.gif') repeat-y 0 0;	float:left;	height:115px;	margin:0 2px;	width:2px}
+.fTitle{font-size:12px;	font-weight:bold;}
+.verticalInfo .fTitle{margin-top: 20px;	margin-bottom:5px;}
+.fTitle a {font-size:12px;	font-family:Arial, Helvetica, sans-serif;	text-decoration:none;}
+.fTitle a:hover {text-decoration:underline;}
+.fTitleBis {font-size:12px;	font-weight:bold;}
+.fTitleBis a {text-decoration:none;}
+.fTitleBis a:hover {text-decoration:underline;}
+.green-15 {font-size:15px;	color:#41A801;	font-family:Arial;	font-weight:normal;	margin:0;	padding:0;}
+.Line {-moz-background-clip:border;	-moz-background-inline-policy:continuous;	-moz-background-origin:padding;	float:left;	font-size:1px;	height:1px;	line-height:1px;	margin:10px 0;	width:950px;}
+.conhomepageBody .conLeftColumn .conMicroAds{padding:0px;}
+
+
+
+
+
+
+
+.conLoginArea {background:url('https://www.argentina.citibank.com/common/imgs/homepage/ARGCB/bg_login.jpg') no-repeat 0 0;	width:235px;	height:210px;	margin-top:0px}
+.conLoginArea .subConLoginArea {width:218px;	margin-top:0px;	#margin-top:3px;}
+.conLoginArea .blueArrow2 {background:url('https://www.argentina.citibank.com/common/imgs/homepage/ARGCB/blueArrows2.gif') no-repeat 0 3px;	margin-left:10px;	margin-top:10px}
+.conLoginArea2 {width:235px; height:105px; float:left;margin-top:9px;}
+.conMiddleColumn .conBanners .conBene .Title a {color:#000066;}
+#TitleRestos {background:url('https://www.argentina.citibank.com/common/imgs/homepage/ARGCB/tit_restos.gif') no-repeat 0 0;}
+#TitleEspect {background:url('https://www.argentina.citibank.com/common/imgs/homepage/ARGCB/tit_espect.gif') no-repeat 0 0;}
+#TitleBenef {background:url('https://www.argentina.citibank.com/common/imgs/homepage/ARGCB/tit_benef.gif') no-repeat 0 0;}
+.conMiddleColumn .conBanners .conBene .Title a:hover {color:#000066;}
+.more {color:#3399cc;}	
+.more a{color:#3399cc;}		
+.conhomepageBody .conLeftColumn .conMicroAds .more {color:#3399cc;}
+.conhomepageBody .conLeftColumn .conMicroAds .more a{color:#3399cc;}
+.conMiddleColumn .conBanners .conBene .more {color:#3399cc;}
+.conMiddleColumn .conBanners .conBene .more a{color:#3399cc;}
+.conhomepageBody .conLeftColumn .conInfoLeft .conInfoLeftCont .more {color:#3399cc;}
+.conhomepageBody .conLeftColumn .conInfoLeft .conInfoLeftCont .more a {color:#3399cc;}
+.fTitle a {color:#000066;}
+.fTitle a:hover {color:#000066;}
+.fTitleBis a {color:#000066;}
+.fTitleBis a:hover {color:#333399;}
+.conFooter .footerLink {color:#333399;}
+.conFooter .footerLink:hover{color:#3399cc;}
+.logintd1 {_padding-top:8px;color:#FFFFFF;font-family:Arial;font-size:11px;}
+.logintd2 {padding-top:6px;_padding-top:10px;padding-left:10px;}
+/* ************************************************ */
+/*                     FIN BODY                     */
+/* ************************************************ */
+
+/* ************************************************ */
+/*                      HEADER                      */
+/* ************************************************ */
+body {margin:auto; position:relative; width:auto;}
+#MainContainer {margin:0 auto; position:relative; width:953px;z-index:9999;}
+
+/* HEADER */
+#Header {width:976px;}
+#Header #HeaderContainer {font-family: Arial,Helvetica,sans-serif; font-size: 18px; color: rgb(45, 45, 117); text-align: left; padding-left: 7px; padding-top: 20px; padding-bottom: 14px; _padding-bottom: 18px; margin-bottom: 0px;}
+#Header #search {left:750px; position:absolute; top:55px;}
+#Header #search #search_input {background:url('bg_input2.gif') no-repeat; width:130px; height:24px; float:left; margin-top:0px; position:relative; top:-1px}
+#Header #search #search_input input {background:url('spacer.gif') no-repeat; border:medium none; color:#666; font-family:Arial; font-size:12px; width:110px; height:15px; margin-left:6px; margin-top:3px}
+#Header #search #search_button {cursor:pointer; float:left; height:20px; margin-left:5px; margin-top:1px; width:82px; background-repeat:no-repeat;}
+#Header #search_button #botonSubmit {background-image:url('search_blue.gif');background-repeat:no-repeat;border:medium none;cursor:pointer;height:21px;width:69px}
+#head_sucur {background:url('https://www.argentina.citibank.com/common/imgs/header/sucur_head.gif') no-repeat; width:22px; height:22px; left:630px; position:absolute; top:23px; cursor:pointer}
+#head_phone {background:url('https://www.argentina.citibank.com/common/imgs/header/phone_head.gif') no-repeat; width:22px; height:22px; left:665px; position:absolute; top:23px; cursor:pointer}
+#head_contac {background:url('https://www.argentina.citibank.com/common/imgs/header/arroba_head.gif') no-repeat; width:22px; height:22px; left:700px; position:absolute; top:23px; cursor:pointer}
+#head_mobile {background:url('https://www.argentina.citibank.com/common/imgs/header/mobile_head.gif') no-repeat; width:22px; height:22px; left:735px; position:absolute; top:23px; cursor:pointer}
+#head_link {display:block; height:22px; width:22px; cursor:pointer;}
+#link_home {cursor:pointer;height:56px;left:14px;position:relative;top:10px;width:80px;}
+/* FIN HEADER */
+
+/* MENU */
+.conBorders .borde {width:11px; height:11px; font-size:1px; line-height:1px;}
+.conBorders .TL {background:url('https://www.argentina.citibank.com/common/imgs/general/conBordersTL.gif') no-repeat !important; position:relative; z-index:2}
+.conBorders .TC {background:url('https://www.argentina.citibank.com/common/imgs/general/conBordersTop.gif') repeat-x !important; position:relative; z-index:2}
+.conBorders .TR {background:url('https://www.argentina.citibank.com/common/imgs/general/conBordersTR.gif') no-repeat !important; position:relative; z-index:2}
+.conBorders .CL {background:url('https://www.argentina.citibank.com/common/imgs/general/conBordersLeft.gif') repeat-y !important; position:relative; z-index:2}
+.conBorders .CR {background:url('https://www.argentina.citibank.com/common/imgs/general/conBordersRight.gif') repeat-y !important; position:relative; z-index:2}
+.conBorders .BL {background:url('https://www.argentina.citibank.com/common/imgs/general/conBordersBL.gif') no-repeat !important; position:relative; z-index:2}
+.conBorders .BC {background:url('https://www.argentina.citibank.com/common/imgs/general/conBordersBottom.gif') repeat-x !important; position:relative; z-index:2}
+.conBorders .BR {background:url('https://www.argentina.citibank.com/common/imgs/general/conBordersBR.gif') no-repeat !important; position:relative; z-index:2}
+.conBorders .CC {position:relative; display:block; z-index:1;width:160px;}
+.conBorders .CC .div {background:#EDEEF0 url('https://www.argentina.citibank.com/common/imgs/general/conBordersBk.jpg') repeat-x top; position:absolute; height:100%; top:-8px; left:-7px; padding:6px}
+.mainbutton {width:inherit; height:36px;}
+.menu .conBorders .CC .div {position:relative; top:4px; left:-7px; width:100%;height:100%;background:#EDEEF0 url('https://www.argentina.citibank.com/common/imgs/general/conBordersBk.jpg') repeat-x center top;; padding-left:6px; padding-right:6px; padding-top:0px; padding-bottom:4px}
+
+#MainContainer .conMenu {float:left; width:100%; z-index:10; position:relative;}
+.alingBoton {position:absolute; bottom:-1px; cursor:pointer; z-index:1;}
+
+.menu {width:953px; height:100px; margin-bottom:10px; background-image:url('https://www.argentina.citibank.com/common/imgs/menu/menuBg.jpg'); position:relative; z-index:0}
+.menu .bancaPersona {background:url('https://www.argentina.citibank.com/common/imgs/menu/laargl/bancaPersonal.gif'); height:36px; left:0; width:122px}
+.menu .citiGold {background:url('https://www.argentina.citibank.com/common/imgs/menu/laargl/citigold.gif'); height:36px; left:122px; width:76px}
+.menu .pagoHaberes {background:url('https://www.argentina.citibank.com/common/imgs/menu/laargl/pagoHaberes.gif'); height:36px; left:198px; width:130px}
+.menu .pymesComercios {background:url('https://www.argentina.citibank.com/common/imgs/menu/laargl/pymesComercios.gif'); height:36px; left:328px; width:147px}
+.menu .bancaCorporativa {background:url('https://www.argentina.citibank.com/common/imgs/menu/laargl/bancaCorporativa.gif'); height:36px; left:475px; width:141px}
+.menu .descuentos {width:200px;height:36px;background:url('https://www.argentina.citibank.com/common/imgs/menu/laargl/descuentos.gif');left:618px}
+.menu .activo {background-position:0px -72px; z-index:12;}
+
+.topMenu {margin:0px; padding:0px; padding-top:15px;}
+.topMenu li {list-style-position:outside; list-style-type:none;}
+.topMenu li a {display:inline-block; margin-bottom:12px; margin-left:15px; color:#006; text-decoration:none;font-family:arial;font-size:11px;}
+.topMenu li a:hover {color:#39C; text-decoration:underline;}
+.subMenuSup {width:200px; position:absolute; top:30px; left:-3px; z-index:20; display:none;}
+/* FIN MENU */
+
+/* PULLDOWN */
+#queNecesitas_combo {z-index:11; left: 788px; position: absolute; top: 22px;}
+#baseAccede {cursor:pointer; width: 150px;}
+#pullAccede {z-index:1; width: 150px; display: none;}
+.pullDown {margin:0 13px;}
+.pullDown a {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#797979; text-decoration:none; margin-left:5px;display:inline-block;}
+.pullDown a:hover {color:#3CF; text-decoration:underline; cursor:pointer;}
+.pullDown .top .table {font-size:0px; line-height:0px;}
+.pullDown .top .table .tol {width:4px; height:4px; background:url('https://www.argentina.citibank.com/common/imgs/general/pulldown/tol.gif');}
+.pullDown .top .table .tom {background:url('https://www.argentina.citibank.com/common/imgs/general/pulldown/top.gif') repeat-x top;}
+.pullDown .top .table .tor {width:4px; height:4px; background:url('https://www.argentina.citibank.com/common/imgs/general/pulldown/tor.gif');}
+.pullDown .top .table .left {background:url('https://www.argentina.citibank.com/common/imgs/general/pulldown/left.gif') repeat-y left;}
+.pullDown .top .table .title {font-size:0px; height:16px; line-height:normal; position:relative;}
+.pullDown .top .table .title #arrow {float:right; background:url('https://www.argentina.citibank.com/common/imgs/general/pulldown/arrow-d.gif'); width:9px; height:4px; margin-left:0px; margin-right:3px; margin-top:5px; margin-bottom:0px}
+.pullDown .top .table .title .linkT {float:left;}
+.pullDown .top .table .title .linkL {font-weight:normal; vertical-align:middle; float:left;}
+.pullDown .top .table .title .spanT {font-family:Verdana,Arial,Helvetica,sans-serif; font-size:11px; margin-left:5px;}
+.pullDown .top .table .right {background:url('https://www.argentina.citibank.com/common/imgs/general/pulldown/right.gif') repeat-y right;}
+.pullDown .top .table .bol {height:4px; background:url('https://www.argentina.citibank.com/common/imgs/general/pulldown/bol.gif');}
+.pullDown .top .table .bom {background:url('https://www.argentina.citibank.com/common/imgs/general/pulldown/bot.gif') repeat-x bottom;}
+.pullDown .top .table .bor {background:url('https://www.argentina.citibank.com/common/imgs/general/pulldown/bor.gif');}
+.pullDown .bott {position:relative; float:left; width:100%; top:-4px; display:none;}
+.pullDown .bott .table {height:100%; width:100%; font-size:0px; line-height:0px;}
+.pullDown .bott .table .left {background:#FFF url('https://www.argentina.citibank.com/common/imgs/general/pulldown/left.gif') repeat-y left;}
+.pullDown .bott .table .options{background:#FFF; font-size:0px; line-height:normal; position:relative; padding-top:5px; height:100px;}
+.pullDown .bott .table .options .option {float:left;line-height:normal;padding-bottom:5px;padding-top:5px;width:100%;}
+.pullDown .bott .table .options .optionL {color:#39C; width:100%; height:16px; padding-top:3px; float:left; line-height:normal;}
+.pullDown .bott .table .right {background:#FFF url('https://www.argentina.citibank.com/common/imgs/general/pulldown/right.gif') repeat-y left center;}
+.pullDown .bott .table .bol {width:4px; height:4px; background:url('https://www.argentina.citibank.com/common/imgs/general/pulldown/bol.gif');}
+.pullDown .bott .table .bom {background:url('https://www.argentina.citibank.com/common/imgs/general/pulldown/bot.gif') repeat-x bottom;}
+.pullDown .bott .table .bor {width:4px; background:url('https://www.argentina.citibank.com/common/imgs/general/pulldown/bor.gif') no-repeat;}
+/* FIN PULLDOWN */
+
+/* ************************************************ */
+/*                    FIN HEADER                    */
+/* ************************************************ */
+
+
+/* ************************************************ */
+/*                    SELECTOR                      */
+/* ************************************************ */
+#selectorProductos {width:100%; float:left;}
+#selectorProductos .contenedor-grande {width:710px; float:left; padding-top:88px; background:url('/laar/selector/blue/img/selector/pestana.png') no-repeat;}
+#selectorProductos .header {width:710px; height:69px; float:left; background:url('/laar/selector/blue/img/selector/header.gif') no-repeat;}
+#selectorProductos .footer {width:710px; height:10px; float:left; background:url('/laar/selector/blue/img/selector/footer.gif') no-repeat;}
+#selectorProductos .body-grande, #selectorProductos .body-chico {width:707px; float:left; border-left:1px solid #DDD; border-right:1px solid #DDD; background:#D4EFF8 url('/laar/selector/blue/img/selector/body_gr.gif') repeat-x top; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px}
+#selectorProductos .selector-tuPerfil {width:220px; float:left; margin-left:10px; display:inline; padding-top:10px;}
+#selectorProductos .selector-queNecesitas {width:320px; float:left; margin-left:10px; display:inline; padding-top:10px;}
+#selectorProductos .selector-queNecesitas2 {width:160px;	float:left;}
+#selectorProductos .selector-oculto {width:320px; height:70px; float:left; display:none;}
+#selectorProductos .selector-oculto2 {width:160px; float:left;}
+#selectorProductos .check-left {float: left; margin-bottom:15px;}
+#selectorProductos .check-left input {width:auto;}
+#selectorProductos .selector-paquetes {width:135px; float:left; text-align:center; padding-top:10px;}
+#selectorProductos .resultado {font-size:50px; font-family:Geneva, Arial, Helvetica, sans-serif;}
+#selectorProductos .error {width:200px; color:#f00;}
+#selectorProductos .cont_pregunta {float: left; width:213px; margin-bottom:3px;}
+#selectorProductos select {width:180px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px;}
+#selectorProductos a {cursor:pointer; white-space: nowrap;}
+#selectorProductos input {width:180px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px;}
+/* ************************************************ */
+/*                   FIN SELECTOR                   */
+/* ************************************************ */
+
+
+/* ************************************************ */
+/*                    FOOTER                        */
+/* ************************************************ */
+.conFooter{
+	float:left;
+	width:953px;
+}
+
+.conFooter .upperFoot{
+	margin:35px 0px 10px 0px; 
+	padding:10px 0px 10px 0px; 
+	 
+	border-top-color:#D6D6D6; 
+	border-top-width:1px; 
+	border-bottom:solid; 
+	border-bottom-color:#D6D6D6; 
+	border-bottom-width:1px;
+	float:left;
+	width:100%;
+}
+
+.conFooter .subFootItem{
+	float:right;
+	margin-right:25px;	
+}
+
+.conFooter .subFootItem a{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#797979;
+	text-decoration:none;
+}
+
+.conFooter .subFootItem a:hover{
+	text-decoration:underline;
+}
+
+.conFooter .links{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#797979;
+	text-decoration:none;
+}
+
+.conFooter .links:hover{
+	text-decoration:underline;
+}
+
+.conFooter .footerLink {
+	font-size:10px;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-weight:normal;
+	text-decoration:underline;
+}
+
+.copyright{
+	font-family:verdana;
+	font-size:10px;
+	color:#797979;
+}
+/* ************************************************ */
+/*                    FIN FOOTER                    */
+/* ************************************************ */
+
+
+/* ************************************************ */
+/*                   BUSCADOR JFP                   */
+/* ************************************************ */
+.cssLinkVerde {	color:#339900;	font-family:Arial;	font-size:13px;	font-weight:bold;}
+.cssTexto01 {	color:#666666;	font-family:Arial;	font-size:13px;	font-weight:normal;}
+#searchBody{width:200px;}
+#searchBody #titulo {	color:#000055;	font-family:Arial;	font-size:18px;	font-weight:normal;	margin-top:25px;	margin-bottom:8px;}
+#searchBody #titulo2 {	color:#000055;	font-family:Arial;	font-size:15px;	font-weight:normal;	margin-top:5px;	margin-bottom:20px;}
+#searchBody #texto {	color:#666666;	font-family:Arial;	font-size:13px;	font-weight:normal;	margin-top:15px;	margin-bottom:8px;}
+#searchBodyField{	display:block;	height:55px;	background-repeat:no-repeat;	background-image:url('https://www.argentina.citibank.com/common/imgs/general/bgBuscador.jpg');	padding-left:20px;	padding-top:10px}
+#searchBodyField #searchBody_input{	float:left;	margin-top:1px;}
+#searchBodyField #searchBody_input input {border:1px solid #D6D6D2;color:#666666;font-family:Arial;font-size:17px;height:25px;margin:0;padding:0;width:130px;}
+#searchBodyField #searchBody_button{	cursor:pointer;	float:left;	height:21px;	margin-left:12px;	margin-top:5px;	#margin-top:3px;	width:69px;	border:none;}
+#searchBodyField #searchBody_button #botonSubmit{	background-repeat:no-repeat;	background-image:url('https://www.argentina.citibank.com/common/imgs/header/search_blue.gif');	border:medium none;	width:69px;	height:21px}
+#leftColumnContainer{	float:left;	width:130px;	padding-bottom:1px;}
+#leftColumnContainer .conLeftColumn {	float:left;	padding:0;	width:130px;}
+
+/***********************Start table window ***********************/
+.tableWindow {background:#F0F0F0 url('https://www.argentina.citibank.com/common/imgs/window/background.jpg') repeat-x top;}
+.tableWindow .tl, .tableWindow .t, .tableWindow .tr, .tableWindow .bl, .tableWindow .b, .tableWindow .br {font-size:1px; line-height:1px; height:5px;}
+.tableWindow .tl, .tableWindow .tr {width:5px;}
+.tableWindow .tl {background:url('https://www.argentina.citibank.com/common/imgs/window/top-left.gif');}
+.tableWindow .t {background:url('https://www.argentina.citibank.com/common/imgs/window/top.gif'); width:auto}
+.tableWindow .tr {background:url('https://www.argentina.citibank.com/common/imgs/window/top-right.gif');}
+.tableWindow .l {background:url('https://www.argentina.citibank.com/common/imgs/window/sides.gif') repeat-y left;}
+
+	/**middle**/
+	.m .conText {margin:10px 0px 0px 15px; line-height:22px;}
+	.tableWindow .m .windowButton {font-size:1px; width:12px; height:12px; float:right;}
+	.tableWindow .m .max {background:url('https://www.argentina.citibank.com/common/imgs/general/conBordersMax.gif');}
+	.tableWindow .m .min {background:url('https://www.argentina.citibank.com/common/imgs/general/conBordersMin.gif');}
+	.tableWindow .m .windowTitle {margin:5px 0 5px 5px; width:175px;}
+	.tableWindow .m .windowContent {position:relative; width:170px; margin:0 0 0 10px;}		
+	/**End middle**/
+
+.tableWindow .r {background:url('https://www.argentina.citibank.com/common/imgs/window/sides.gif') repeat-y right;}
+.tableWindow .bl {background:url('https://www.argentina.citibank.com/common/imgs/window/bottom-left.gif');}
+.tableWindow .b {background:url('https://www.argentina.citibank.com/common/imgs/window/bottom.gif'); width:auto}
+.tableWindow .br {background:url('https://www.argentina.citibank.com/common/imgs/window/bottom-right.gif');}
+/***********************End table window ***********************/
+
+/*BEGIN TEXT*/
+.principalText {padding-bottom: 15px;}
+.fTitle {font-size:12px; font-weight:bold; color:#00005D;}
+.fSubTitleBullet {font-family:Arial; font-size:16px; font-weight:bold; color:#001175;}
+.fSubTitleSubItemBullet {font-size:14px; font-weight:bold;}
+.fSubIntroBullet {font-family:Arial; font-size:14px; font-weight:bold; color:#39C;}
+.fTitle .black {font-size:14px; color:#333;}
+.fBlackTitle {font-size:14px; color:#333; font-weight:bold;}
+.blackText {font-family:Arial; font-size:11px; color:#000;}
+.greyText2 {font-family:Arial; font-size:13px; text-decoration:none; color:#666;}
+.disclaimer {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:9px; color:#989898;}
+.disclaimer2 {color:#666; font-family:Arial; font-size:11px; padding-top:50px; text-decoration:none;}
+.subProduct {background:transparent none repeat scroll 0 0; color:#000; font-weight:bold; margin-bottom:12px; padding-left:15px; cursor:text;}
+.subProduct:hover {text-decoration:none; cursor:text; margin-bottom:12px; padding-left:15px;}
+.subProductMap {font-weight:bold; color:#656565; font-family:Arial,Helvetica,sans-serif; font-size:12px;}
+/*END TEXT*/
+
+/* BEGIN LINKS */
+.fBlueLink a {font-weight:bold; color:#39C; text-decoration:none; cursor:pointer;}
+.fBlueLink a:hover {text-decoration:underline;}
+.whiteLink a {color:#FFF; text-decoration:none;}
+.whiteLink a:hover {text-decoration:underline;}
+.fNormalLink a {color:#39C; text-decoration:none;}
+.fNormalLink a:hover {text-decoration: underline;}
+#bulletsArea .borderTopBullet span .fgreenLink {color:#390; font-family:Arial; font-weight:bold; font-size:11px; background:url('https://www.argentina.citibank.com/common/imgs/general/linkMoreInfo.gif') no-repeat 0 3px; padding-left:10px}
+.fgreenLink a {color:#390; font-family:Arial; font-weight:bold; font-size:11px; text-decoration:none;}
+.fgreenLink a:hover {text-decoration:underline;}
+#bulletsArea div .callToAction {font-size:13px; font-weight:bold; padding-left:10px; color:#390; background:url('https://www.argentina.citibank.com/common/imgs/general/linkMoreInfo.gif') no-repeat 0 5px;}
+#bulletsArea div .callToAction a {color:#390;}
+/*END LINKS*/
+
+.fBlueNormalLink a {	color:#3399CC;	text-decoration:none; }
+#leftBestService {	color:#3399CC;}
+.triLinkMenu {float:left; cursor:pointer; width:50%; height:63px; text-align:center; line-height:13px;}
+.contactenosgif {	background-repeat:no-repeat;	height:28px;	padding-bottom:5px;	width:28px;}
+#citiphoneImg{	background-image:url('https://www.argentina.citibank.com/common/imgs/general/menuIcon1.gif');	margin:auto;	width:28px}
+#citiphoneLink{	display:block;	height:28px;}
+#emailImg{	background-image:url('https://www.argentina.citibank.com/common/imgs/general/menuIcon2.gif');	margin:auto;	width:28px}
+#emailLink{	display:block;	height:28px;}
+/* ************************************************ */
+/*                FIN BUSCADOR JFP                  */
+/* ************************************************ */
+
+.bdaymodule {
+
+    border: 1px solid grey;
+    margin: 4px;
+    padding: 8px;
+    font-family: verdana;
+    background: red;
+	
+}

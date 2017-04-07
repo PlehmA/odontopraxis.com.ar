@@ -1,0 +1,22 @@
+.tit {  font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #304B86; text-decoration: none}
+.bajada {  font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #666666; line-height: 14px}
+.volanta {  font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #304B86}
+.bajada2 {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #666666}
+.txt {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #000000}
+.supra {  font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #FFFFFF}
+.noticias {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #304B86; text-decoration: none}
+
+.menu_abm {font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #304B86;text-decoration:none}
+.menu2_abm {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #304B86;text-decoration:none}
+.txt_abm {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #666666; text-decoration: none}
+.txt2_abm {font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #666666; text-decoration: none}
+.txt3_abm {font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #FF6600; text-decoration: none}
+
+.txt2_abm_selected {font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #336699; text-decoration: none}
+
+
+.boton { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #666666; line-height: 14px;border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px }
+.contorno_izq_menu { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #666666; line-height: 14px;border-style: solid; border-top-width: 0px; border-right-width: 1px; border-bottom-width: 0px; border-left-width: 0px }
+.contorno_der_menu { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #666666; line-height: 14px;border-style: solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 1px }
+
+.txt3_select_abm {font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #FF6600; text-decoration: none;line-height: 14px;border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}

@@ -1,0 +1,88 @@
+body {
+	
+
+
+}
+
+.contenedor {background: #eee;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 21px;
+    border: 1px solid;
+    margin-top: 30px;}
+.contenido {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: 16px;}
+
+.agendausuariostab {
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	padding: 23px
+}
+.modulos {
+
+
+font-family: verdana;
+font-size: 12px;
+}
+.modulos a {
+
+
+}
+
+.col-der{
+	padding: 10px;
+
+}
+.lat-izq {
+	padding: 6px;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.lat-izq td {
+	font-size:13px
+}
+.nombreusuario{
+	color:#7290b9
+}
+
+.menu2_abm {
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:11px
+}
+.txt_abm
+{
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:11px
+}
+
+.bdaymodule {
+
+   border: 1px solid grey;
+margin: 11px 0px;
+font-family: verdana;
+background: white;
+	
+}
+
+.bdaymodule h1 {
+	font-size: 12px;
+
+color: white;
+padding: 5px;
+margin-top: 0px;
+background-image:url ('http://www.odontopraxis.com.ar/intranet/cumple.png');
+background: #738fbb;
+background-repeat:no-repeat
+
+}
+
+.bdaymodule img {
+float: right;
+margin-top: -10px;
+}
+
+.bdaymodule a {
+font-family: verdana;
+font-size: 12px;
+color: f08080;
+text-decoration: none;
+margin-left: 5px;
+}
