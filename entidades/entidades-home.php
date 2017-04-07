@@ -10,7 +10,7 @@
 
 
 
-<?
+<?php
   include ('lib.php');
   include ('checks.php');
   include ('conect.php');

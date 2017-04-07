@@ -5,10 +5,10 @@ $username=$_POST['usuario'];
 $password=$_POST['password'];
 $con=crearConexion();
 $con->set_charset("UTF-8");
-$sql="SELECT nombre, clave FROM users_entidades WHERE nombre= '$username' AND clave='$password'";
-$result=$con->query("SELECT id_usuario FROM users_entidades");
+$sql="SELECT * FROM users_entidades WHERE clave='$password' AND nombre= '$username'";
+$result=$con->query("SELECT id FROM users_entidades");
 $row=$result->fetch_assoc();
-if ($row['id_usuario']==0)
+if ($row['id']==0)
 {
    echo "<script>alert ('¡Ingreso invalido al sistema!')</script>";
     echo "<script>window.location.assign('index.php')</script>";
@@ -17,8 +17,9 @@ if ($row['id_usuario']==0)
          {
             session_start();
             $_SESSION['time']=date('H:i:s');
-            $_SESSION['usuario']=$username;
+            $_SESSION['prestador']=$username;
             $_SESSION['logeado']=true;
-            header("location:welcome.php");
+            $_SESSION['cuit']=$cuit;
+            header("location:entidades-home.php");
          }; 
 ?>
