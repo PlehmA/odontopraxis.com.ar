@@ -1,4 +1,4 @@
-<?php
+<?
 	define("TITLE",			"Intranet");
 	define("MAIN_PAGE",		"entidades-home.php");
 	define("LOGIN_PAGE",	"index.php");

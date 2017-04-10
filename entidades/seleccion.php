@@ -34,7 +34,7 @@
     <div class="grid_1_of_3 images_1_of_3">
 	<a href="gestion-prestadores.php" target="black">
       <h3>&nbsp;</h3>
-      <h3><a href="index.php">INGRESO CONFIGURACION<br />
+      <h3><a href="entidades-home.php">INGRESO CONFIGURACION<br />
       PERFIL</h3> <h1> (GESTION DE TRAMITES) </h1> </a>
 
 </div>

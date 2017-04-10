@@ -10,13 +10,11 @@
 
 
 
-<?php
+<?
   include ('lib.php');
   include ('checks.php');
   include ('conect.php');
- if ($_SESSION) {
-   # code...
- }
+ 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -72,9 +70,9 @@ a:active {
     <div class="menu-iz2" id="menu-iz2">
       <div class="titulos-autogestion" id="titulos-autogestion"><strong>Perfil</strong></div>
       
-PRESTADOR: <?php echo $_SESSION['prestador']; ?><br />
-CUIT: <?php echo $_SESSION['cuit']; ?> <br />
-e-Mail: <?php echo $_SESSION['email']; ?><br /><br />
+PRESTADOR: <?=$_SESSION['prestador']?><br />
+CUIT: <?=$_SESSION['cuit']?> <br />
+e-Mail: <?=$_SESSION['email']?><br /><br />
 <div class="titulo-autogestion2" id="titulo-autogestion2">UTILIDADES</div>
       <p>&gt;<a href="1-actualizar-datos-personales.php"> Actualizar datos personales</a></p>
       <p>&gt; <a href="2-actualizar-consultorio.php">Actualizar  consultorio</a><a href="datos-contacto.php"></a></p>
@@ -82,14 +80,17 @@ e-Mail: <?php echo $_SESSION['email']; ?><br /><br />
       <p>&gt; <a href="4-envio-registro-nac-sss.php">Envío del Registro Nacional de Prestador de la SSS</a><a href="form-malapraxis.php"></a></p>
             <p>&gt; <a href="5-envio-cob-malapraxis.php">Envío de Cobertura Resp. Civil (Mala Praxis)</a><a href="form-malapraxis.php"></a></p>
                         <p>&gt; <a href="6-alta-staff.php">Alta / Baja de staff</a><a href="form-malapraxis.php"></a></p>
-                        <p>&gt; <a href="ingresoaerp.php">Ingreso a ERP</a></p>
+        <p>&gt;<a href="liquidaciones/erp/PDF/index.php"> Liquidaciones</a></p>
       <div class="titulo-autogestion2" id="titulo-autogestion3"> NOVEDADES </div>
       <p>&gt; <a href="7-novedades.php">Instructivos - Formularios</a></p>
-      <p><a href="novedades.html"><br /></a> </p>
+      <p><a href="novedades.html"></a></p>
+      <br />
       <tr>
-        <td valign="top" bgcolor="#FFFFFF"><input type="button" value="Salir" onclick="location='index.php?g=1'" style="width:80px" /></td>
+        <td valign="top" bgcolor="#FFFFFF"><input type="button" value="Salir" onclick="location='logout.php'" style="width:80px" /></td>
       </tr>
     </div>
+    </td>
+    </tr>
   </div>
 </div>
   

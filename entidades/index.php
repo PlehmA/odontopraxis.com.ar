@@ -9,7 +9,7 @@
 <title>Odontopraxis Americana s.a.</title>
 
 
-<?php
+<?
 // session_start();
  session_unset();
  //session_destroy();
@@ -33,27 +33,27 @@ include ('lib.php');
   <!--**************************************************-->
  
       <br />
-<?php      if (isset($_GET['g'])) { 
-        echo "<h2 align='center'> Gracias por utilizar el sistema de gestión de Odontopraxis  </h2>";
-    }   ?>        
+<?      if (isset($_GET['g'])) {    ?> 
+        <h2 align="center"> Gracias por utilizar el sistema de gestión de Odontopraxis  </h2>
+<?      }   ?>        
 
       <br />
-<?php      if (isset($_GET['i'])) {
-        echo "<h2 align='center'> Su usuario aun se encuentra en proceso de ser activado. <br /> Por favor intentelo m&aacutes tarde</h2>";     
-        }   
-        ?>     
+<?      if (isset($_GET['i'])) {    ?> 
+        <h2 align="center"> Su usuario aun se encuentra en proceso de ser activado. <br /> Por favor intentelo m&aacutes tarde</h2>
+<?      }   ?>     
 
       <h2 align="center"> Ingreso al sistema</h2>
  <br />
-        <form  method="POST" action="validarEntidad.php">
-        Usuario:
+ <form  method="POST" action="validarEntidad.php">
+Usuario:
         <input type="text" class="menu2_abm" name="usuario">
         <br />
+        
         Contrase&ntilde;a:
 
         <input type="password" class="menu2_abm" name="password">
         <br />
-        <br />
+<br />
 
         <p align="center">
           <input type="submit" value=" Aceptar " >
@@ -62,6 +62,12 @@ include ('lib.php');
     <a href="olvidoPassEntidad.php" style="color: grey;">Olvid&eacute mi contrase&ntilde;a </a>
 </p>
 </form >
+<!--**************************************************--
+
+</strong><br />
+    <br />
+
+    <!--**************************************************-->
  
 
 </div>
