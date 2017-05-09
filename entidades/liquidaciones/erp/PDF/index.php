@@ -5,6 +5,7 @@ include ('./conect.php');
 	$id = $_SESSION['idUsuario'];
 	$prestador = $_SESSION['prestador'];
 	$cuit = $_SESSION['cuit'];
+	$enciut = md5($cuit);
 
 $_CONFIG = array();
 $_ERROR = "";
@@ -14,7 +15,7 @@ $_LANG = array();
 $_CONFIG['lang'] = "es";
 
 
-$_CONFIG['starting_dir'] = "/".$cuit."/";
+$_CONFIG['starting_dir'] = "/".$enciut."/";
 
 
 $_CONFIG['open_in_new_window'] = 0;
@@ -36,7 +37,7 @@ $_CONFIG['charset'] = "UTF-8";
 $_CONFIG['hidden_dirs'] = array();
 
 
-$_CONFIG['hidden_files'] = array(".ftpquota", "index.php", "index.php~", ".htaccess", ".htpasswd");
+$_CONFIG['hidden_files'] = array(".ftpquota", "index.php", "index.php~", ".htaccess", ".htpasswd","index.php?dir=33707820069");
 
 $_CONFIG['upload_password'] = "";
 
@@ -1062,6 +1063,7 @@ class Encode_Explorer
 <?php css(); ?>
 <meta content="text/html; charset=<?php print $_CONFIG['charset']; ?>" http-equiv="content-type" />
 <title>Explorador de Archivos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
@@ -1198,10 +1200,9 @@ if(strlen($_CONFIG['upload_password']) > 0)
 }
 ?>
 
-<div>
-	<a href="http://test.odontopraxis.com.ar/entidades/entidades-home.php" style="text-decoration: none; color: white; padding-bottom: 50px;"><button class="btn btn-danger center-block">Salir</button></a>
-</div>
-
+	<div class="container text-center" style="padding-top: 50px;">
+	<button class="btn btn-danger"><a href="http://test.odontopraxis.com.ar/entidades/entidades-home.php" style="text-decoration: none; color: white; padding-bottom: 50px;">Salir</a></button>
+	</div>
 <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
 </script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">

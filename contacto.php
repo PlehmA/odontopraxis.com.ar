@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -7,82 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 <link href="web/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!--start slider -->
-    <link rel="stylesheet" href="web/css/fwslider.css" media="all">
-    <script src="web/js/jquery.min.js"></script>
-    <script src="web/js/jquery-ui.min.js"></script>
-    <script src="web/js/css3-mediaqueries.js"></script>
-    <script src="web/js/fwslider.js"></script>
-<!--end slider -->
-<script type="text/javascript" src="web/js/jquery-hover-effect.js"></script>
-<script type="text/javascript">
-//Image Hover
-jQuery(document).ready(function(){
-jQuery(function() {
-	jQuery('ul.da-thumbs > li').hoverdir();
-});
-});
-</script>
-<!-- Add fancyBox main JS and CSS files -->
-<script src="web/js/jquery.magnific-popup.js" type="text/javascript"></script>
-<link href="web/css/magnific-popup.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-.titulos {
-	color: rgba(109,207,246,1);
-	font-size: 1.3em;
-}
-</style>
-<script>
-			$(document).ready(function() {
-				$('.popup-with-zoom-anim').magnificPopup({
-					type: 'inline',
-					fixedContentPos: false,
-					fixedBgPos: true,
-					overflowY: 'auto',
-					closeBtnInside: true,
-					preloader: false,
-					midClick: true,
-					removalDelay: 300,
-					mainClass: 'my-mfp-zoom-in'
-			});
-		});
-		</script>
-<!--nav-->
-<script>
-$(function() {
-			var pull 		= $('#pull');
-				menu 		= $('nav ul');
-				menuHeight	= menu.height();
 
-			$(pull).on('click', function(e) {
-				e.preventDefault();
-				menu.slideToggle();
-			});
-
-			$(window).resize(function(){
-        		var w = $(window).width();
-        		if(w > 320 && menu.is(':hidden')) {
-        			menu.removeAttr('style');
-        		}
-    		});
-		});
-function MM_validateForm() { //v4.0
-  if (document.getElementById){
-    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
-    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
-      if (val) { nm=val.name; if ((val=val.value)!="") {
-        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
-          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
-        } else if (test!='R') { num = parseFloat(val);
-          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
-          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
-            min=test.substring(8,p); max=test.substring(p+1);
-            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
-      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
-    } if (errors) alert('The following error(s) occurred:\n'+errors);
-    document.MM_returnValue = (errors == '');
-} }
-</script>
 </head>
 <body>
 <div class="header_bg">
@@ -142,16 +66,16 @@ Nos comunicaremos con usted inmediatamente.
           <div class="bloquetxt4contacto" id="bloquetxt4contacto">
           
           
-          
-          
-    <?php
+ <?php 
+session_start();
 if (!isset($_POST['email'])) {
+
 ?>
           
           
           
           
-  <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+  <form action="<?=$_SERVER['PHP_SELF']?>" method="POST">
     
 </br><div class="mod-contacto01">
 Ud. es  profesional:
@@ -161,20 +85,24 @@ Ud. es  paciente:
 <input type="radio" name="Departamento" value="coordinación@odontopraxis.com.ar" id="Departamento_1" /></div>
   
         
-   <div class="mod-contacto"> Nombre:<input name="nombre" type="text"  id="nombre" size="28" /></div>
+   <div class="mod-contacto"> Nombre:<input name="nombre" type="text"  id="nombre" size="28" required /></div>
    
    
-<div class="mod-contacto">Apellido:<input name="apellido" type="text" id="apellido" size="28" /></div>
+<div class="mod-contacto">Apellido:<input name="apellido" type="text" id="apellido" size="28" required /></div>
 
-<div class="mod-contacto">Correo:<input name="email" type="text" id="email" size="28" /></div>
+<div class="mod-contacto">Correo:<input name="email" type="text" id="email" size="28" required /></div>
 
-<div class="mod-contacto">Teléfono:<input name="telefono" type="text"  id="telefono" size="28" /></div>
+<div class="mod-contacto">Teléfono:<input name="telefono" type="text"  id="telefono" size="28" required /></div>
         <br />
 <div class="mod-contacto2">Su consulta:<br />
         <div class="txtcontacto" id="txtcontacto"></div>
         <textarea name="mensaje" cols="45" rows="6"></textarea><br /><br />
+        <img id="captcha" src="securimage/securimage_show.php" alt="CAPTCHA Image" />
+        <input type="text" name="captcha_code" size="10" maxlength="6" required />
+<a href="#" onclick="document.getElementById('captcha').src = 'securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a>
+            <br>
             <input type="reset" value="Borrar" />
-    <input type="submit" onclick="MM_validateForm('nombre','','R','apellido','','R','email','','NisEmail','telefono','','R');return document.MM_returnValue" value="Enviar" /></div>
+    		<input type="submit" value="Enviar" /></div>
 
     
     
@@ -185,8 +113,16 @@ Ud. es  paciente:
 
     </form>
   <?php
+  
 }else{
-  $mensaje="Mensaje de contacto de www.odontopraxis.com.ar";
+//primero incluimos el script de securimage
+include_once("securimage/securimage.php");
+//creo un objeto securimage
+$img = new securimage();
+//valido el campo input del formulario donde se había escrito el texto de la imagen
+$valido_captcha = $img->check($_POST['captchacode']);
+if ($valido_captcha){
+   $mensaje="Mensaje de contacto de www.odontopraxis.com.ar";
   $mensaje.= "\nNombre: ". $_POST['nombre'];
   $mensaje.= "\nApellido: ". $_POST['apellido'];
   $mensaje.= "\nEmail: ".$_POST['email'];
@@ -198,12 +134,12 @@ Ud. es  paciente:
   
   
   $email = $_POST['Departamento'];
-mail($email, $asunto, $mensaje, "FROM: formulario@odontopraxis.com<info@estudiosendero.com.ar>\n");
-
-
-?>
-          <p class="textogeneral2"><strong>Mensaje enviado.</strong></p>
-  <?php
+mail($email, $asunto, $mensaje, "FROM: formulario@odontopraxis.com\n");
+}else{
+  echo "<script>alert('Captcha incorrecto');</script>";
+  echo "<script>window.location.assign('contacto.php')</script>";
+}
+echo "<script>window.location.assign('contacto.php')</script>";
 }
 ?>
     
@@ -215,7 +151,7 @@ mail($email, $asunto, $mensaje, "FROM: formulario@odontopraxis.com<info@estudios
 
 
 </div> <!-- FIN contenedor>
-<!-- FIN cuerpo texto y foto -->
+FIN cuerpo texto y foto -->
 
 <!-- start mian --></p>
 </div>
@@ -287,7 +223,7 @@ mail($email, $asunto, $mensaje, "FROM: formulario@odontopraxis.com<info@estudios
 			</div>
 		  
 			<div class="span1_of_3b ">
-              <p><img src="web/images/facebook.png" width="65" height="56"> <img src="web/images/mobilePublicInfo.jpg" width="63" height="59">&nbsp;&nbsp; </p>
+              <p><img src="web/images/facebook.png" width="65" height="56"> <img src="web/images/mobilepublicinfo.jpg" width="63" height="59">&nbsp;&nbsp; </p>
               <div class="clear"></div>
             
 		</div>
@@ -298,7 +234,11 @@ mail($email, $asunto, $mensaje, "FROM: formulario@odontopraxis.com<info@estudios
 
 <div class="separador" id="separador"></div>
 
-<div class="piecopy" id="piecopy">Odontopraxis Americana 2014® Todos los derechos reservados I diseño <a href="http://www.estudiosendero.com.ar" target="_blank">Estudio Sendero</a></div>
+<div class="piecopy" id="piecopy">Odontopraxis Americana <?php echo date('Y'); ?> Todos los derechos reservados</div>
 </div>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,129 +1,128 @@
+<?php
+if ($activo=true) {
+	include ('./conect.php');
+	session_start();
+	header('Content-Type: text/html;charset-UTF-8');
+	$id = $_SESSION['idUsuario'];
+	$prestador = $_SESSION['prestador'];
+	$cuit = $_SESSION['cuit'];
+	
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="utf-8">
-	<title>Explorador de archivos en PHP</title>
+	<meta charset="UTF-8">
+	<title>Ordenes de Pago</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<style>
-	section>div	{clear:both;}
-	.group		{overflow:hidden;padding:2px;}
-	section .group:nth-child(odd) {background:#e5e5e5;}
-	.directory	{font-weight:bold;}
-	.name		{float:left;width:250px;overflow:hidden;}
-	.mime		{float:left;margin-left:10px;}
-	.size		{float:right;}
-	.bold		{font-weight:bold;}
-	footer		{text-align:center;margin-top:20px;color:#808080;}
-	</style>
 </head>
 <body>
-<?php
-// obtenemos la ruta a revisar, y la ruta anterior para volver...
-if($_GET["path"])
-{
-	$path=$_GET["path"];
-	$back=implode("/",explode("/",$_GET["path"],-2));
-	if($back){
-		$back.="/*";
-			 }
-	else{
-
-		$back="*";
-		}
-}else{
-
-	$path="*";
-
+<style>
+a{
+	text-decoration: none;
+	color: #000;
 }
+th {
+	text-align: center;
+	font-size: 35px;
+	color: #CCC;
+}
+td {
+	text-align: center;
+}
+thead {
+	background-color: #B9ECFF;
+}
+</style>
+<div class="container text-center">
+
+	<h3>Bienvenido/a <?php echo $prestador; ?></h3>
+	<h5>Ésta es la lista de PDFs.</h5>
+	<br>
+	<!--<nav class="pull-left">
+		<ul>
+			<li><a href="">2017</a></li>
+			<ul>
+				<li><a href="">Enero</a></li>
+				<li><a href="">Febrero</a></li>
+				<li><a href="">Abril</a></li>
+				<li><a href="">Abril</a></li>
+				<li><a href="">Junio</a></li>
+				<li><a href="">Junio</a></li>
+				<li><a href="">Julio</a></li>
+				<li><a href="">Agosto</a></li>
+				<li><a href="">Septiembre</a></li>
+				<li><a href="">Octubre</a></li>
+				<li><a href="">Noviembre</a></li>
+				<li><a href="">Diciembre</a></li>
+			</ul>
+		</ul>
+	</nav> -->
+	<div class="center-block">
+	<table class="table table-striped table-bordered text-center ">
+	<thead>
+		<tr>
+			<th>
+				Año
+			</th>
+		</tr>
+	</thead>
+	
+<?php
+function listFiles($directorio){ //La función recibira como parametro un directorio
+if (is_dir($directorio)) { //Comprobamos que sea un directorio Valido
+if ($dir = opendir($directorio)) {//Abrimos el directorio
+while (($archivo = readdir($dir)) !== false){ //Comenzamos a leer archivo por archivo
+if ($archivo != '.' && $archivo != '..'){//Omitimos los archivos del sistema . y ..
+$nuevaRuta = $directorio.$archivo;//Creamos unaruta con la ruta anterior y el nombre del archivo actual 
+if (is_dir($nuevaRuta)) { //Si la ruta que creamos es un directorio entonces:
+//echo '<b>'.$nuevaRuta.'</b>'; //Imprimimos la ruta completa resaltandola en negrita
+listFiles($nuevaRuta);//Volvemos a llamar a este metodo para que explore ese directorio.
+} else { //si no es un directorio:
+$ruta_archivo = $directorio.$archivo;
 ?>
-<header>
-	<h1>Explorador de archivos en PHP</h1>
-</header>
-<nav>
-	<h2><?php echo $path?></h2>
-</nav>
-<section>
-	<?php
-	// si no estamos en la raiz, permitimos volver hacia atras
-	if($path!="*"){
-		echo "<div class='bold group'><a href='?path=".$back."'>...</a></div>";
-	}
-	// devuelve el tipo mime de su extensión (desde PHP 5.3)
+<tbody>
+	<tr>
+		<td>
+			<?php  echo "<a href='".$ruta_archivo."' target='_blank'>".$archivo."</a>";?>
+		</td>
+	</tr>
+</tbody>
+<?php
+} //Cerramos el item actual y se inicia la llamada al siguiente archivo
+}
+}//finaliza While
+closedir($dir);//Se cierra el archivo
+}
+}else{//Finaliza el If de la linea 12, si no es un directorio valido, muestra el siguiente mensaje
+echo 'No Existe el directorio';
+}
+}//Fin de la Función	
+//Llamamos a la función y le pasamos el nombre de nuestro directorio.
+listFiles("erp/PDF/2017");
+?>		
+</table>
+	<br>
+	<hr>
+	</div>
+		<a href="entidades-home.php"><button class="btn btn-default btn-sm text-center">Volver</button></a>
+</div>
+<br>
 
-	$finfo1 = finfo_open(FILEINFO_MIME_TYPE);
-
-	// devuelve la codificación mime del fichero (desde PHP 5.3)
-
-	$finfo2 = finfo_open(FILEINFO_MIME_ENCODING);
-	$folder=0;
-	$file=0;
-	# recorremos todos los archivos de la carpeta
-
-	foreach (glob($path) as $filename)
-
-	{
-		$fileMime=finfo_file($finfo1, $filename);
-
-		$fileEncoding=finfo_file($finfo2, $filename);
-
-		if($fileMime=="directory")
-
-		{
-
-			$folder+=1;
-
-			// mostramos la carpeta y permitimos pulsar sobre la misma
-
-			echo "<div class='directory group'>
-
-				<a href='?path=".$filename."/*' class='name'>".end(explode("/",$filename))."</a>
-
-				<div class='mime'>(".$fileEncoding.")</div>
-
-			</div>";
-
-		}else{
-
-			$file+=1;
-
-			// mostramos la información del archivo
-
-			echo "<div class='group'>
-
-				<div class='size'>".number_format(filesize($filename)/1024,2,",",".")." Kb</div>
-
-				<div class='name'>".end(explode("/",$filename))."</div>
-
-				<div class='mime'>".$fileMime." (".$fileEncoding.")</div>
-
-			</div>";
-
-		}
-
-	}
-
- 
-
-	finfo_close($finfo1);
-
-	finfo_close($finfo2);
-
-	?>
-
-	<footer>
-
-		<?php echo $folder?> carpeta/s y <?php echo $file?> archivo/s
-
-	</footer>
-
-</section>
-
- 
-<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+	</script>
 </body>
-
 </html>
+<?php 
+}
+else{
+	session_destroy();
+	header("Location: index.php");
+}
+
+
+
+?>

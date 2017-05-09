@@ -1,7 +1,12 @@
 <!--************* Contratacion personal ADMINISTRATIVO***************************-->
 
 <?php 
-
+include_once("securimage/securimage.php");
+//creo un objeto securimage
+$img = new securimage();
+//valido el campo input del formulario donde se había escrito el texto de la imagen
+$valido_captcha = $img->check($_POST['captchacode']);
+if ($valido_captcha){
  $asunto = "Mensaje enviado por";
 function form_mail($sPara, $sAsunto, $sTexto, $sDe)
 { 
@@ -54,4 +59,8 @@ if (form_mail("admpesonal@odontopraxis.com.ar",
 $asunto = "WEB - Contratacion personal ADMIN - Enviado por: ".$_POST['asunto'],
 "Los datos introducidos en el formulario son:\n\n", $_POST[email])) 
 echo "Su formulario ha sido enviado con exito"; 
+}else{
+  echo "<script>alert('Captcha incorrecto');</script>";
+  echo "<script>window.location.assign('contacto.php')</script>";
+}
 ?>

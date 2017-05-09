@@ -56,6 +56,16 @@ a:active {
     </head>
 
 <body>
+<?php 
+$sql = "SELECT rol_usuario FROM users_entidades WHERE cuit=" . $_SESSION['cuit'];
+$result = mysql_query($sql);
+$row = mysql_result($result, 0);
+
+if ($row==2) {
+  echo "<script>alert('¡Usted no tiene los permisos para ingresar aquí!');</script>";
+  echo "<script>window.open('https://prepaga.odontopraxis.com.ar/PREPAGA/pages/login.faces','_self')</script>";
+}else {
+?>
 <div class="header" id="header">
   <p><img src="img/logo.png" width="342" height="104" /><br />
   Bienvenidos al sistema de Utilidades de Odontopraxis Americana</p>
@@ -76,14 +86,12 @@ e-Mail: <?=$_SESSION['email']?><br /><br />
 <div class="titulo-autogestion2" id="titulo-autogestion2">UTILIDADES</div>
       <p>&gt;<a href="1-actualizar-datos-personales.php"> Actualizar datos personales</a></p>
       <p>&gt; <a href="2-actualizar-consultorio.php">Actualizar  consultorio</a><a href="datos-contacto.php"></a></p>
-      <p>&gt; <a href="abm-impositivos.php">Actualizar datos impositivos</a><a href="datos-contacto.php"></a></p>
+      <p>&gt; <a href="3-actualizar-impositivos.php">Actualizar datos impositivos</a><a href="datos-contacto.php"></a></p>
       <p>&gt; <a href="4-envio-registro-nac-sss.php">Envío del Registro Nacional de Prestador de la SSS</a><a href="form-malapraxis.php"></a></p>
             <p>&gt; <a href="5-envio-cob-malapraxis.php">Envío de Cobertura Resp. Civil (Mala Praxis)</a><a href="form-malapraxis.php"></a></p>
                         <p>&gt; <a href="6-alta-staff.php">Alta / Baja de staff</a><a href="form-malapraxis.php"></a></p>
         <p>&gt;<a href="liquidaciones/erp/PDF/index.php"> Liquidaciones</a></p>
-      <div class="titulo-autogestion2" id="titulo-autogestion3"> NOVEDADES </div>
-      <p>&gt; <a href="7-novedades.php">Instructivos - Formularios</a></p>
-      <p><a href="novedades.html"></a></p>
+      <div class="titulo-autogestion2" id="titulo-autogestion3"><a href="7-novedades.php"> Novedades </a></div>
       <br />
       <tr>
         <td valign="top" bgcolor="#FFFFFF"><input type="button" value="Salir" onclick="location='logout.php'" style="width:80px" /></td>
@@ -99,6 +107,7 @@ e-Mail: <?=$_SESSION['email']?><br /><br />
 <br />
 <br />
 <div class="pie" id="pie">Odontopraxis Americana 2015® Todos los derechos reservados  diseño Sendero </div>
+<?php } ?>
 </body>
     </html>
 

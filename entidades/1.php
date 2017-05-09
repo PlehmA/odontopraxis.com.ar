@@ -84,10 +84,10 @@ a:active {
       <p>&gt; <a href="abm-consultorio.php">ABM de consultorio</a><a href="datos-contacto.php"></a></p>
       <p>&gt; <a href="abm-impositivos.php">ABM datos impositivos</a><a href="datos-contacto.php"></a></p>
       <p>&gt; <a href="comprobantes-vencimiento.php">Comprobantes con vencimiento</a><a href="form-malapraxis.php"></a></p>
+      <p>&gt;<a href="liquidaciones/erp/PDF/index.php"> Liquidaciones</a></p>
       <div class="titulo-autogestion2" id="titulo-autogestion3"> NOVEDADES </div>
-      <p>&gt; <a href="novedades.php">Novedades</a></p>
-      <p><a href="novedades.html"><br />
-      </a> </p>
+      <div class="titulo-autogestion2" id="titulo-autogestion3"><a href="7-novedades.php"> Novedades </a></div>
+      <br />
       <tr>
         <td valign="top" bgcolor="#FFFFFF"><input type="button" value="Salir" onclick="location='index.php?g=1'" style="width:80px" /></td>
       </tr>

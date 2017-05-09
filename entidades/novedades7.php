@@ -52,6 +52,7 @@ a:active {
       <p>&gt; <a href="cartilla.php">Solicitud de cartilla</a></p>
 <p>&gt; <a href="datos-contacto.php">Actualizar datos de contacto</a></p>
       <p>&gt; <a href="form-malapraxis.php">Envío de seguros de mala praxis</a></p>
+      <p>&gt;<a href="liquidaciones/erp/PDF/index.php"> Liquidaciones</a></p>
       <div class="titulo-autogestion2" id="titulo-autogestion3"> NOVEDADES </div>
       <div class="inhibido" id="inhibido">&gt; Instructivos - Formularios</div>
       <p>&nbsp;</p>

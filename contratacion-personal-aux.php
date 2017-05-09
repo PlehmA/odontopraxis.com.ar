@@ -134,6 +134,9 @@ Buscamos personal administrativo. Indispensable predisposición para trabajar en
 <p><br>
   Adjuntar C.V. 
   <input type='file' name='archivo1' id='archivo1'></p> 
+  <img id="captcha" src="securimage/securimage_show.php" alt="CAPTCHA Image" />
+        <input type="text" name="captcha_code" size="10" maxlength="6" required />
+<a href="#" onclick="document.getElementById('captcha').src = 'securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a>
 <p>
 <input type='submit' value='Enviar'> 
 </p> 
@@ -154,6 +157,9 @@ Buscamos personal administrativo. Indispensable predisposición para trabajar en
       Adjuntar C.V.
       <input type='file' name='archivo2' id='archivo2'>
     </p>
+    <img id="captcha1" src="securimage/securimage_show.php" alt="CAPTCHA Image" />
+        <input type="text" name="captcha_code" size="10" maxlength="6" required />
+<a href="#" onclick="document.getElementById('captcha1').src = 'securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a>
     <p>
       <input type='submit' value='Enviar'>
     </p>
@@ -175,6 +181,9 @@ Buscamos personal administrativo. Indispensable predisposición para trabajar en
       Adjuntar C.V.
       <input type='file' name='archivo3' id='archivo3'>
     </p>
+    <img id="captcha2" src="securimage/securimage_show.php" alt="CAPTCHA Image" />
+        <input type="text" name="captcha_code" size="10" maxlength="6" required />
+<a href="#" onclick="document.getElementById('captcha2').src = 'securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a>
     <p>
       <input type='submit' value='Enviar'>
     </p>

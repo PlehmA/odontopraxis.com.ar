@@ -141,6 +141,9 @@ Comentarios:<br />
 <textarea name="comentarios" cols="28" rows="4" class="textogeneral" id="comentarios"></textarea></div>
 
 <div class="mod-contacto1" id="mod-contacto1">
+<img id="captcha" src="securimage/securimage_show.php" alt="CAPTCHA Image" />
+        <input type="text" name="captcha_code" size="10" maxlength="6" required />
+<a href="#" onclick="document.getElementById('captcha').src = 'securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a>
 <input type="reset" value="Borrar" /> 
 <input type="submit" onclick="MM_validateForm('nombre','','R','apellido','','R','nacimiento','','R','especialidades','','R','domicilio','','R','ciudad','','R','mail','','RisEmail');return document.MM_returnValue" value="Enviar" />
     </div>
@@ -149,6 +152,12 @@ Comentarios:<br />
 </form>
 <?php
 }else{
+  include_once("securimage/securimage.php");
+//creo un objeto securimage
+$img = new securimage();
+//valido el campo input del formulario donde se había escrito el texto de la imagen
+$valido_captcha = $img->check($_POST['captchacode']);
+if ($valido_captcha){
   $mensaje="Mensaje del formulario de contacto de Odontopraxis Contratacion de profesionales";
   $mensaje.= "\nNombre: ". $_POST['nombre'];
   $mensaje.= "\nApellido: ". $_POST['apellido'];
@@ -180,13 +189,11 @@ Comentarios:<br />
   $remitente = $_POST['email'];
   $asunto = "WEB - Contrat de Profesionales - enviado por: ".$_POST['nombre'];
   mail($destino,$asunto,$mensaje,"FROM: $remitente");
-  
-
-
-?>
-<p class="textogeneral"><strong>Mensaje enviado.</strong></p>
-<p>
-  <?php
+ }else{
+  echo "<script>alert('Captcha incorrecto');</script>";
+  echo "<script>window.location.assign('contacto.php')</script>";
+}
+echo "<script>window.location.assign('contacto.php')</script>";
 }
 ?>
 </p>

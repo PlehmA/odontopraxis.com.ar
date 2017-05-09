@@ -1,11 +1,11 @@
-<?
+<?php
 include ('lib.php');
 
 if ( (!isset($_POST['usuario'])) || (!isset($_POST['password'])) )	{
 //	header("location: index.php");
 ?>
 <META HTTP-EQUIV="Refresh" CONTENT="0; URL=<?=LOGIN_PAGE?>">	
-<?
+<?php
 	return;
 }
 
@@ -37,6 +37,7 @@ include ('conect.php');
 			$email = mysql_result($res,0,'email');
 			$codigo = mysql_result($res,0,'codigo');
 			$prestador = mysql_result($res,0,'prestador');
+			$rol = mysql_result($res,0,'rol_prestador');
 			session_start();
 			unset($_SESSION['nombre']);
 			$_SESSION['usuario']=$_POST['usuario'];
@@ -45,6 +46,7 @@ include ('conect.php');
 			$_SESSION['email']=$email;
 			$_SESSION['cuit']=$cuit;
 			$_SESSION['prestador']=$prestador;
+			$_SESSION['rol_prestador']=$rol;
 			$_SESSION['start'] = time();
 			$minutos = 60;
 			$_SESSION['expire'] = $_SESSION['start'] + ($minutos * 60);
@@ -59,7 +61,7 @@ if ($inactivo)	{
 
 	?>
 	<META HTTP-EQUIV="Refresh" CONTENT="0; URL=<?=LOGIN_PAGE?>?i=1">
-	<?
+	<?php
 	return;
 
 }else{

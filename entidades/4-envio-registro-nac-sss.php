@@ -58,10 +58,9 @@ e-Mail:
       </p>
       <p>&gt; <a href="5-envio-cob-malapraxis.php">Envio de Cobertura Resp. Civil (Mala Praxis)</a><a href="form-malapraxis.php"></a></p>
       <p>&gt; <a href="6-alta-staff.php">Alta / Baja de Staff</a><a href="form-malapraxis.php"></a></p>
-      <div class="titulo-autogestion2" id="titulo-autogestion3"> NOVEDADES </div>
-      <p>&gt; <a href="7-novedades.php">Instructivos - Formularios</a></p>
-      <p><a href="novedades.html"><br />
-      </a></p>
+      <p>&gt;<a href="liquidaciones/erp/PDF/index.php"> Liquidaciones</a></p>
+      <div class="titulo-autogestion2" id="titulo-autogestion3"><a href="7-novedades.php"> Novedades </a></div>
+      <br />
       <tr>
         <td valign="top" bgcolor="#FFFFFF"><input type="button" value="Salir" onclick="location='index.php?g=1'" style="width:80px" /></td>
       </tr>
